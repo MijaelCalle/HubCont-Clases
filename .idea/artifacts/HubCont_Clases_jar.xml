@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HubCont-Clases:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/HubCont_Clases_jar</output-path>
+    <root id="archive" name="HubCont-Clases.jar">
+      <element id="module-output" name="HubCont-Clases" />
+    </root>
+  </artifact>
+</component>
