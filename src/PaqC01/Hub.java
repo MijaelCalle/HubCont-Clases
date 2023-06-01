@@ -93,7 +93,6 @@ public class Hub implements Serializable {
     }
 
 
-
     public int contenedoresPorPais(String pais) {
         int cantidad = 0;
 
@@ -105,6 +104,27 @@ public class Hub implements Serializable {
             }
         }
         return cantidad;
+    }
+
+
+    //1. Examen metodo chequeoAduanas.
+    public int chequeoAduanas(int prioridad) {
+        int cont = 0;
+        for (int i = 0; i < contenedores.length; i++) {
+            for (int j = 0; j < contenedores[i].length; j++) {
+                if (contenedores[i][j] != null) {
+                    if (contenedores[i][j].getPrioridad() == prioridad) {
+                        cont = cont + 1;
+                    } else if (contenedores[i][j].getPrioridad() == prioridad) {
+                        cont = cont + 1;
+                    } else if (contenedores[i][j].getPrioridad() == prioridad) {
+                        cont = cont + 1;
+                    }
+                }
+            }
+
+        }
+        return cont;
     }
 }
 

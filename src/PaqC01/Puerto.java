@@ -1,8 +1,8 @@
 package PaqC01;
-
+import PaqC01.*;
 import java.io.Serializable;
 
-public class Puerto implements Serializable {
+public class Puerto extends Hub implements Serializable  {
     private Hub[] puerto;
 
     public Puerto() {
@@ -40,6 +40,12 @@ public class Puerto implements Serializable {
             total += puerto[i].contenedoresPorPais(pais);
         }
 
+        return total;
+    }
+    //2. Examen método totalpuertos.
+    public int totalpuertos(int prioridad){
+        int total=0;
+        total = chequeoAduanas(prioridad);
         return total;
     }
 
